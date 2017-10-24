@@ -6,7 +6,7 @@ RUN apt-get update \
     && apt-get install wget git ca-certificates \
     && apt-get install libjpeg8-dev imagemagick libv4l-dev make gcc git cmake g++
 
-RUN wget --output-document repetier-server.deb -q http://download.repetier.com/files/server/debian-armel/Repetier-Server-0.70.1-Linux.deb
+RUN wget --output-document repetier-server.deb -q http://download.repetier.com/files/server/debian-armel/Repetier-Server-0.86.2-Linux.deb
 RUN dpkg -i repetier-server.deb
 
 RUN git clone https://github.com/jacksonliam/mjpg-streamer.git
